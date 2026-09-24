@@ -1,4 +1,7 @@
 import { ThemeToogle } from "../components/ThemeToogle";
+import { StarBackground } from "@/components/StarBackground";
+import { NavBar } from "@/components/NavBar";
+import { HeroSection } from "@/components/HeroSection";
 
 export const Home = () => {
   return (
@@ -7,10 +10,15 @@ export const Home = () => {
       <ThemeToogle />
 
       {/* Background effects */}
+      <StarBackground />
 
       {/* NavBar */}
+      <NavBar />
 
       {/* Main content */}
+      <main>
+        <HeroSection />
+      </main>
 
       {/* footer */}
     </div>

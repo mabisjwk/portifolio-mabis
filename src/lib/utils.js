@@ -1,6 +1,7 @@
-import { clsx } from "clsx"
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
-export const cn = () => {
-    // minuto = 44:13 
-    // https://www.youtube.com/watch?v=ifOJ0R5UQOc
-}
+//cn - className
+export const cn = (...inputs) => {
+  return twMerge(clsx(inputs));
+};
