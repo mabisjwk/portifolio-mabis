@@ -157,13 +157,41 @@
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95;
 }
 
-@utility star {
-  @apply absolute rounded-full bg-white;
+.star {
+  position: absolute;
+  border-radius: 9999px;
+
+  background-color: rgba(121, 26, 204, 0.55);
+  box-shadow: 0 0 10px 2px rgba(121, 26, 204, 0.1);
+}
+
+.dark .star {
+  background-color: white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
 
-@utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+.meteor {
+  position: absolute;
+  border-radius: 9999px;
+
+ background: linear-gradient(
+    to right,
+    rgba(24, 3, 71, 0.7),
+    rgba(66, 44, 116, 0.7),
+    transparent
+  );
+
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark .meteor {
+  background: linear-gradient(
+    to right,
+    white,
+    white,
+    transparent
+  );
+
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
